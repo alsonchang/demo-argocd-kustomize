@@ -1,4 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - app-deployment.yaml
+  - ./resources/demo-namespace.yaml
+  - ./resources/app-deployment.yaml
+  - ./resources/app-service.yaml
+  - ./resources/mysqldb-deployment.yaml
+  - ./resources/mysqldb-service.yaml
